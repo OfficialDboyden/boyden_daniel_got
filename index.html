@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Video with ES6</title>
 </head>
 <body>
   <section class="wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/aEzZLXBH3rU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+    <!-- video stuff goes here -->
+  <video  muted poster="assets/vidThumbs/vid1_large.png">
+    <!-- add sources here! -->
+    <source src="video/mini_1.ogg" type="video/ogv">
+      <source src="video/mini_1.ogg" type="video/mp4">
+        <source src="video/mini_1.webm" type="video/webm">
+    your browser doesn't support video. Use one that doesn't suck!
+  </video>
+  <button>Play</button>
+  <button>Pause</button>
+  <button>Rewind</button>
   </section>
   <script src="js/main.js"></script>
 </body>
